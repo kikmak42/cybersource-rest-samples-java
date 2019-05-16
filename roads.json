@@ -1,0 +1,130 @@
+{
+	"title":"RoadRunner",
+	"version":"1.0",
+	"roads": [{
+		"uniqueName": "Process a Payment",
+		"description": "This has to be a detailed explanation of the test, and what it accomplishes",
+		"sampleClassName": {
+			"java" : "payments.coreServices.ProcessPayment",
+			"csharp" : "payments.coreServices.ProcessPayment"
+		},
+		"responseClassName": {
+			"java" : "PtsV2PaymentsPost201Response",
+			"csharp" : "PtsV2PaymentsPost201Response"
+		},
+		"assertions": {
+			"httpStatus" : "201",
+			"expectedValues" :[
+				{
+					"field" : "status",
+					"value" : "AUTHORIZED"
+				},
+				{
+					"field" : "processorInformation.responseCode",
+					"value" : "100"
+				},
+				{
+					"field" : "orderInformation.amountDetails.authorizedAmount",
+					"value" : "100.00"
+				}
+			],
+			"requiredFields" : [ "id", "reconciliationId"]
+		},
+		"before": {
+			"TBD" : "TBD"
+		},
+		"after": {
+			"TBD" : "TBD"
+		},
+		"input": {
+			"TBD" : "TBD"
+		},
+		"useSavedInput": {
+			"TBD" : "TBD"
+		},
+		"saveOutput": {
+			"TBD" : "TBD"
+		},
+		"previousTest": {
+			"TBD" : "TBD"
+		}
+	},
+	{
+		"uniqueName": "Process a Payment",
+		"description": "This has to be a detailed explanation of the test, and what it accomplishes",
+		"sampleClassName": {
+			"java" : "payments.coreServices.ProcessPayment",
+			"csharp" : "payments.coreServices.ProcessPayment"
+		},
+		"responseClassName": {
+			"java" : "PtsV2PaymentsPost201Response",
+			"csharp" : "PtsV2PaymentsPost201Response"
+		},
+		"assertions": {
+			"httpStatus" : "201",
+			"expectedValues" :[
+				{
+					"field" : "status",
+					"value" : "AUTHORIZED"
+				},
+				{
+					"field" : "processorInformation.responseCode",
+					"value" : "100"
+				},
+				{
+					"field" : "orderInformation.amountDetails.authorizedAmount",
+					"value" : "100.00"
+				}
+			],
+			"requiredFields" : [ "id", "reconciliationId"]
+		},
+		"before": {
+			"TBD" : "TBD"
+		},
+		"after": {
+			"TBD" : "TBD"
+		},
+		"input": {
+			"TBD" : "TBD"
+		},
+		"useSavedInput": {
+			"TBD" : "TBD"
+		},
+		"saveOutput": {
+			"TBD" : "TBD"
+		},
+		"previousTest": {
+			"TBD" : "TBD"
+		}
+	},
+	{
+		"uniqueName": "Process a Payment",
+		"description": "This has to be a detailed explanation of the test, and what it accomplishes",
+		"sampleClassName": {
+			"java" : "payments.coreServices.ProcessPayment",
+			"csharp" : "payments.coreServices.ProcessPayment"
+		},
+		"responseClassName": {
+			"java" : "PtsV2PaymentsPost201Response",
+			"csharp" : "PtsV2PaymentsPost201Response"
+		},
+		"assertions": {
+			"httpStatus" : "201",
+			"expectedValues" :[
+				{
+					"field" : "status",
+					"value" : "AUTHORIZED"
+				},
+				{
+					"field" : "processorInformation.responseCode",
+					"value" : "100"
+				},
+				{
+					"field" : "orderInformation.amountDetails.authorizedAmount",
+					"value" : "100.00"
+				}
+			],
+			"requiredFields" : [ "id", "reconciliationId"]
+		}
+	}]
+}
